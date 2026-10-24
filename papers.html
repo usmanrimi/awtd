@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="claude:viewport-fit-sides" content="cover">
-  <meta name="description" content="10 Position Papers — Working documents produced by AWTD: The AWTD Blueprint, Market Needs Survey, Concept Note — Nigeria Pilot, and Capability Statement.">
-  <title>10 Position Papers — AWTD | Africa Workforce Training &amp; Development</title>
+  <meta name="description" content="Position Papers — Working documents produced by AWTD: The AWTD Blueprint, Market Needs Survey, Concept Note — Nigeria Pilot, and Capability Statement.">
+  <title>Position Papers — AWTD | Africa Workforce Training &amp; Development</title>
   <link rel="icon" type="image/jpeg" href="04%20Logos/awtd-official-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -20,12 +21,12 @@
     <div class="topbar-meta">
       <span class="topbar-badge">
         <span class="topbar-dot" aria-hidden="true"></span>
-        <span>Africa Workforce Training &amp; Development, Inc.</span>
+        <span data-config="legal-name">Africa Workforce Training &amp; Development, Inc.</span>
       </span>
       <span class="topbar-sep topbar-hide-sm" aria-hidden="true">·</span>
       <span class="topbar-hide-sm">US · Nigeria · South Africa</span>
       <span class="topbar-sep topbar-hide-sm" aria-hidden="true">·</span>
-      <span class="topbar-hide-sm">Nigeria Pilot: March 2027</span>
+      <span class="topbar-hide-sm">Nigeria Pilot (<span data-config="pilot-cities">Abuja + Kaduna</span>): March 2027</span>
     </div>
     <label class="switch" title="Highlight slots awaiting final board sign-off or asset clearance">
       <input type="checkbox" id="reviewToggle" role="switch" aria-checked="false">
@@ -38,7 +39,7 @@
 <nav class="nav" aria-label="Primary Navigation">
   <div class="wrap nav-in">
     <a class="mark" href="index.html" aria-label="AWTD — Africa Workforce Training & Development Home">
-      <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="46" height="46">
+      <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="68" height="68">
       <div class="mark-text">
         <span class="mark-glyph"><em>A</em>WTD</span>
         <span class="mark-sub">Africa Workforce Training &amp; Development</span>
@@ -68,6 +69,11 @@
     <div class="wrap review-bar-in">
       <span>BOARD REVIEW MODE ACTIVE · Dashed gold borders mark slots awaiting final asset delivery or board sign-off.</span>
       <div class="review-bar-actions">
+        <div class="review-city-editor" title="Single-source pilot cities field — updates every reference across the site">
+          <label for="reviewCityInput">Pilot Cities:</label>
+          <input type="text" id="reviewCityInput" value="Abuja + Kaduna" aria-label="Edit single-source pilot cities">
+          <button type="button" class="review-city-save" id="reviewCitySaveBtn">Apply</button>
+        </div>
         <button type="button" class="review-jump-btn" id="reviewNextBtn">Next outstanding item →</button>
       </div>
     </div>
@@ -80,11 +86,9 @@
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a>
         <span class="breadcrumb-sep" aria-hidden="true">/</span>
-        <span aria-current="page">10 · Position Papers</span>
+        <span aria-current="page">Position Papers</span>
       </nav>
-      <p class="eyebrow">10 · Technical Documentation</p>
-      <div class="rule"></div>
-      <h1 class="h-sec" style="font-size:clamp(2.5rem,6vw,4.3rem)">Position papers</h1>
+      <h1 class="h-sec" style="font-size:clamp(2.35rem,5vw,3.6rem)">Position papers</h1>
       <p class="lead">Working documents produced by the initiative. They're written for people solving the same problem.</p>
     </div>
   </header>
@@ -92,56 +96,48 @@
   <section class="band reveal" id="insights" aria-labelledby="heading-insights">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">10 / Working Documents</p>
-        <div class="rule"></div>
-        <h2 class="h-sec" id="heading-insights">Initiative publications &amp; technical notes</h2>
+        <div>
+          <h2 class="h-sec" id="heading-insights">Initiative publications &amp; technical notes</h2>
+        </div>
         <p class="lead">Select any document below to view its release status or request a copy through the partner and funder portal.</p>
       </div>
 
       <div class="pend">
-        <div class="papers">
-          <div class="paper" role="button" tabindex="0" data-doc-id="blueprint" aria-label="View status for The AWTD Blueprint PDF">
-            <div>
-              <div class="paper-top">
-                <span class="date">2026 · Working Paper</span>
-                <span class="dl">Request PDF →</span>
-              </div>
-              <h4 style="margin-top:12px">The AWTD Blueprint</h4>
+        <div class="publication-index">
+          <div class="publication-row" role="button" tabindex="0" data-doc-id="blueprint" aria-label="View status for The AWTD Blueprint PDF">
+            <div class="pub-main">
+              <h4>The AWTD Blueprint</h4>
               <p>The full model: employer-led standards, the six-stage learner journey, and the quality safeguards that keep it from drifting into theory.</p>
             </div>
+            <span class="pub-type">Working Paper</span>
+            <span class="pub-action">Request PDF →</span>
           </div>
 
-          <div class="paper" role="button" tabindex="0" data-doc-id="market-survey" aria-label="View status for Market Needs Survey PDF">
-            <div>
-              <div class="paper-top">
-                <span class="date">2026 · Working Paper</span>
-                <span class="dl">Request PDF →</span>
-              </div>
-              <h4 style="margin-top:12px">Market Needs Survey</h4>
+          <div class="publication-row" role="button" tabindex="0" data-doc-id="market-survey" aria-label="View status for Market Needs Survey PDF">
+            <div class="pub-main">
+              <h4>Market Needs Survey</h4>
               <p>Employer demand mapping across the candidate sectors, and what it says about where the technician gap sits.</p>
             </div>
+            <span class="pub-type">Working Paper</span>
+            <span class="pub-action">Request PDF →</span>
           </div>
 
-          <div class="paper" role="button" tabindex="0" data-doc-id="concept-note" aria-label="View status for Concept Note — Nigeria Pilot PDF">
-            <div>
-              <div class="paper-top">
-                <span class="date">2026 · Working Paper</span>
-                <span class="dl">Request PDF →</span>
-              </div>
-              <h4 style="margin-top:12px">Concept Note — Nigeria Pilot</h4>
+          <div class="publication-row" role="button" tabindex="0" data-doc-id="concept-note" aria-label="View status for Concept Note — Nigeria Pilot PDF">
+            <div class="pub-main">
+              <h4>Concept Note — Nigeria Pilot</h4>
               <p>Scope, cohort design, placement targets, and the decision gate that governs whether the model scales.</p>
             </div>
+            <span class="pub-type">Working Paper</span>
+            <span class="pub-action">Request PDF →</span>
           </div>
 
-          <div class="paper" role="button" tabindex="0" data-doc-id="capability-statement" aria-label="View status for Capability Statement PDF">
-            <div>
-              <div class="paper-top">
-                <span class="date">2026 · Executive Brief</span>
-                <span class="dl">Request PDF →</span>
-              </div>
-              <h4 style="margin-top:12px">Capability Statement</h4>
+          <div class="publication-row" role="button" tabindex="0" data-doc-id="capability-statement" aria-label="View status for Capability Statement PDF">
+            <div class="pub-main">
+              <h4>Capability Statement</h4>
               <p>Who AWTD is, the sectors it works across, and what distinguishes the model from conventional TVET provision.</p>
             </div>
+            <span class="pub-type">Executive Brief</span>
+            <span class="pub-action">Request PDF →</span>
           </div>
         </div>
         <div class="pend-note">PROPOSED, NOT CLEARED · These four working documents are awaiting final public release clearance. The capability statement is undergoing final officer table verification prior to distribution.</div>
@@ -152,11 +148,10 @@
   <section class="next-band" aria-label="Next section navigation">
     <div class="wrap next-band-in">
       <div>
-        <p class="eyebrow" style="margin-bottom:6px">Next in Sequence · 11</p>
-        <h2 class="h-sec" style="font-size:clamp(1.6rem,3.4vw,2.3rem)">Working with AWTD: employer, funder, and institutional pathways.</h2>
+        <h2 class="h-sec" style="font-size:clamp(1.5rem,3vw,2.1rem)">Working with AWTD: employer, funder, and institutional pathways.</h2>
       </div>
       <div class="btns" style="margin-top:0">
-        <a class="btn btn-p" href="get-involved.html">11 Working with AWTD →</a>
+        <a class="btn btn-p" href="get-involved.html">Working with AWTD →</a>
       </div>
     </div>
   </section>
@@ -179,7 +174,7 @@
     <div class="foot-in">
       <div class="foot-brand">
         <div class="foot-brand-mark">
-          <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="54" height="54">
+          <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="62" height="62">
           <div class="mark-text">
             <span class="mark-glyph"><em>A</em>WTD</span>
             <span class="mark-sub">Africa Workforce Training &amp; Development</span>
@@ -190,25 +185,25 @@
       </div>
 
       <div class="foot-meta">
-        <b>Architecture</b>
-        <a href="problem.html">01 · The Problem</a><br>
-        <a href="model.html">02 · The Model</a><br>
-        <a href="tracks.html">04 · Training Tracks</a><br>
-        <a href="measurement.html">05 · Measurement</a>
+        <b>Programme</b>
+        <a href="problem.html">The Problem</a>
+        <a href="model.html">The Model</a>
+        <a href="tracks.html">Training Tracks</a>
+        <a href="measurement.html">Measurement</a>
       </div>
 
       <div class="foot-meta">
         <b>Execution &amp; Governance</b>
-        <a href="partners.html">07 · Partners</a><br>
-        <a href="pilot.html">08 · Nigeria Pilot</a><br>
-        <a href="leadership.html">09 · Leadership</a><br>
-        <a href="papers.html">10 · Position Papers</a>
+        <a href="partners.html">Partners</a>
+        <a href="pilot.html">Nigeria Pilot</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="papers.html">Position Papers</a>
       </div>
 
       <div class="foot-meta pend">
         <b>Contact &amp; Inquiries</b>
-        <a href="mailto:hello@awtd.org" data-config="contact-email">hello@awtd.org</a><br>
-        <span>Pilot Hubs: <span data-config="pilot-cities">Abuja + Kaduna</span></span><br>
+        <a href="mailto:hello@awtd.org" data-config="contact-email">hello@awtd.org</a>
+        <span>Pilot Hubs: <span data-config="pilot-cities">Abuja + Kaduna</span></span>
         <a href="get-involved.html">Partner &amp; Funder Portal →</a>
         <div class="pend-note">AWAITING · Final public contact details to be confirmed prior to launch.</div>
       </div>

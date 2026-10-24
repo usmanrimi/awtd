@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="claude:viewport-fit-sides" content="cover">
-  <meta name="description" content="09 Leadership — AWTD's seated board and nine officers spanning the United States, Nigeria, and South Africa.">
-  <title>09 Leadership — AWTD | Africa Workforce Training &amp; Development</title>
+  <meta name="description" content="Leadership — AWTD's seated board and nine officers spanning the United States, Nigeria, and South Africa.">
+  <title>Leadership — AWTD | Africa Workforce Training &amp; Development</title>
   <link rel="icon" type="image/jpeg" href="04%20Logos/awtd-official-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -20,12 +21,12 @@
     <div class="topbar-meta">
       <span class="topbar-badge">
         <span class="topbar-dot" aria-hidden="true"></span>
-        <span>Africa Workforce Training &amp; Development, Inc.</span>
+        <span data-config="legal-name">Africa Workforce Training &amp; Development, Inc.</span>
       </span>
       <span class="topbar-sep topbar-hide-sm" aria-hidden="true">·</span>
       <span class="topbar-hide-sm">US · Nigeria · South Africa</span>
       <span class="topbar-sep topbar-hide-sm" aria-hidden="true">·</span>
-      <span class="topbar-hide-sm">Nigeria Pilot: March 2027</span>
+      <span class="topbar-hide-sm">Nigeria Pilot (<span data-config="pilot-cities">Abuja + Kaduna</span>): March 2027</span>
     </div>
     <label class="switch" title="Highlight slots awaiting final board sign-off or asset clearance">
       <input type="checkbox" id="reviewToggle" role="switch" aria-checked="false">
@@ -38,7 +39,7 @@
 <nav class="nav" aria-label="Primary Navigation">
   <div class="wrap nav-in">
     <a class="mark" href="index.html" aria-label="AWTD — Africa Workforce Training & Development Home">
-      <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="46" height="46">
+      <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="68" height="68">
       <div class="mark-text">
         <span class="mark-glyph"><em>A</em>WTD</span>
         <span class="mark-sub">Africa Workforce Training &amp; Development</span>
@@ -68,6 +69,11 @@
     <div class="wrap review-bar-in">
       <span>BOARD REVIEW MODE ACTIVE · Dashed gold borders mark slots awaiting final asset delivery or board sign-off.</span>
       <div class="review-bar-actions">
+        <div class="review-city-editor" title="Single-source pilot cities field — updates every reference across the site">
+          <label for="reviewCityInput">Pilot Cities:</label>
+          <input type="text" id="reviewCityInput" value="Abuja + Kaduna" aria-label="Edit single-source pilot cities">
+          <button type="button" class="review-city-save" id="reviewCitySaveBtn">Apply</button>
+        </div>
         <button type="button" class="review-jump-btn" id="reviewNextBtn">Next outstanding item →</button>
       </div>
     </div>
@@ -80,11 +86,9 @@
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a>
         <span class="breadcrumb-sep" aria-hidden="true">/</span>
-        <span aria-current="page">09 · Leadership</span>
+        <span aria-current="page">Leadership</span>
       </nav>
-      <p class="eyebrow">09 · Corporate Governance</p>
-      <div class="rule"></div>
-      <h1 class="h-sec" style="font-size:clamp(2.5rem,6vw,4.3rem)">Leadership</h1>
+      <h1 class="h-sec" style="font-size:clamp(2.35rem,5vw,3.6rem)">Leadership</h1>
       <p class="lead">AWTD is formally incorporated, with officers seated across the United States, Nigeria and South Africa. Nine of them carry defined responsibility for the model, the pilot, and the entities that will run it.</p>
 
       <div class="stats" aria-label="Governance Footprint">
@@ -108,46 +112,165 @@
     </div>
   </header>
 
-  <section class="band band--mid reveal" id="team" aria-labelledby="heading-team">
+  <section class="band reveal" id="team" aria-labelledby="heading-team">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">09 / Tri-Jurisdiction Board</p>
-        <div class="rule"></div>
-        <h2 class="h-sec" id="heading-team">Jurisdictional accountability &amp; officer portfolios</h2>
-        <p class="lead">AWTD's nine officers operate across three integrated jurisdictions, combining international corporate oversight with on-the-ground technical hub execution.</p>
+        <div>
+          <h2 class="h-sec" id="heading-team">Nine Seated Officers &amp; Jurisdictional Portfolios</h2>
+        </div>
+        <p class="lead">AWTD's nine officers operate across three integrated jurisdictions, combining international corporate oversight with on-the-ground technical hub execution and cross-continental replication.</p>
       </div>
 
+      <!-- Tri-Jurisdiction Accountability Overview -->
+      <div class="jurisdiction-bar" role="list" aria-label="Operating Jurisdictions">
+        <div class="jurisdiction-pill" role="listitem">
+          <span>United States · Corporate Seat</span>
+          <h3>Fiduciary Governance &amp; Strategic Capital</h3>
+          <p>Board oversight, corporate compliance for <span data-config="legal-name">Africa Workforce Training &amp; Development, Inc.</span>, international donor coordination, and diaspora partnerships.</p>
+        </div>
+        <div class="jurisdiction-pill jurisdiction-pill--gold" role="listitem">
+          <span>Nigeria · Pilot Operations</span>
+          <h3>National Pilot &amp; Employer Coalitions</h3>
+          <p>Direct execution of the <span data-config="pilot-cities">Abuja + Kaduna</span> hub-and-spoke pilot, NBTE and state government alignment, technical hub operations, and EAG management.</p>
+        </div>
+        <div class="jurisdiction-pill" role="listitem">
+          <span>South Africa · Regional Scale</span>
+          <h3>Curriculum Standards &amp; Replication</h3>
+          <p>Cross-continental TVET competency benchmarking, master trainer standards, quality assurance protocols, and packaging of the AWTD Replication Kit.</p>
+        </div>
+      </div>
+
+      <!-- Balanced 9-Person Editorial Portfolio Grid -->
       <div class="pend">
-        <div class="gov-grid">
-          <article class="gov-card">
-            <span class="gov-jurisdiction">United States · Corporate Seat</span>
-            <h3>Fiduciary Governance &amp; Strategic Capital</h3>
-            <p>Board oversight, corporate compliance for Africa Workforce Training &amp; Development, Inc., international donor coordination, and diaspora institutional partnerships.</p>
-            <span class="tag">Incorporated Entity Oversight</span>
+        <div class="leadership-editorial-grid" role="list" aria-label="Nine Seated AWTD Officers">
+          <!-- Person 1 -->
+          <article class="leader-profile" role="listitem">
+            <div class="leader-portrait">
+              <div class="leader-avatar-monogram" aria-hidden="true">SI</div>
+              <span class="leader-jurisdiction-tag">Nigeria &amp; US</span>
+              <span class="leader-seat-badge">Officer 01</span>
+            </div>
+            <div class="leader-body">
+              <h3 class="leader-name">Dr. Sadique Ishaku</h3>
+              <p class="leader-role">Executive Officer &amp; Technicon Lead · Nigeria / US</p>
+              <p class="leader-bio">Stewards AWTD's technical hub infrastructure, institutional domain governance, and pilot technicon facility integration across Nigeria and the United States.</p>
+            </div>
           </article>
-          <article class="gov-card">
-            <span class="gov-jurisdiction">Nigeria · Pilot Operations</span>
-            <h3>National Pilot &amp; Employer Coalitions</h3>
-            <p>Direct execution of the <span data-config="pilot-cities">Abuja + Kaduna</span> hub-and-spoke pilot, NBTE and state government alignment, technical hub operations, and Employer Advisory Group management.</p>
-            <span class="tag">March 2027 Pilot Execution</span>
+
+          <!-- Person 2 -->
+          <article class="leader-profile" role="listitem">
+            <div class="leader-portrait">
+              <div class="leader-avatar-monogram" aria-hidden="true">US</div>
+              <span class="leader-jurisdiction-tag">United States</span>
+              <span class="leader-seat-badge">Officer 02</span>
+            </div>
+            <div class="leader-body">
+              <h3 class="leader-name">Board Chair &amp; Fiduciary Lead</h3>
+              <p class="leader-role">Corporate Governance · United States</p>
+              <p class="leader-bio">Accountable for board oversight, corporate compliance for Africa Workforce Training &amp; Development, Inc., and strategic international capital partnerships.</p>
+            </div>
           </article>
-          <article class="gov-card">
-            <span class="gov-jurisdiction">South Africa · Regional Scale</span>
-            <h3>Curriculum Standards &amp; Replication</h3>
-            <p>Cross-continental TVET competency benchmarking, master trainer standards, quality assurance protocols, and packaging of the AWTD Replication Kit.</p>
-            <span class="tag">Continental Replication</span>
+
+          <!-- Person 3 -->
+          <article class="leader-profile" role="listitem">
+            <div class="leader-portrait">
+              <div class="leader-avatar-monogram" aria-hidden="true">US</div>
+              <span class="leader-jurisdiction-tag">United States</span>
+              <span class="leader-seat-badge">Officer 03</span>
+            </div>
+            <div class="leader-body">
+              <h3 class="leader-name">Chief Operating Officer</h3>
+              <p class="leader-role">Institutional Operations · United States</p>
+              <p class="leader-bio">Directs cross-jurisdiction operational systems, quality assurance governance, and institutional donor and diaspora coordination.</p>
+            </div>
+          </article>
+
+          <!-- Person 4 -->
+          <article class="leader-profile" role="listitem">
+            <div class="leader-portrait">
+              <div class="leader-avatar-monogram" aria-hidden="true">US</div>
+              <span class="leader-jurisdiction-tag">United States</span>
+              <span class="leader-seat-badge">Officer 04</span>
+            </div>
+            <div class="leader-body">
+              <h3 class="leader-name">Secretary &amp; Treasury Officer</h3>
+              <p class="leader-role">Fiduciary &amp; Audit · United States</p>
+              <p class="leader-bio">Oversees fiduciary controls, grant accountability, statutory filings, and transparent financial reporting across all operating jurisdictions.</p>
+            </div>
+          </article>
+
+          <!-- Person 5 -->
+          <article class="leader-profile" role="listitem">
+            <div class="leader-portrait">
+              <div class="leader-avatar-monogram" aria-hidden="true">NG</div>
+              <span class="leader-jurisdiction-tag">Nigeria</span>
+              <span class="leader-seat-badge">Officer 05</span>
+            </div>
+            <div class="leader-body">
+              <h3 class="leader-name">Nigeria Pilot Operations Director</h3>
+              <p class="leader-role">Hub-and-Spoke Delivery · Nigeria</p>
+              <p class="leader-bio">Leads on-the-ground execution of the <span data-config="pilot-cities">Abuja + Kaduna</span> pilot cohorts, Minimum Viable Lab setup, and workshop safety enforcement.</p>
+            </div>
+          </article>
+
+          <!-- Person 6 -->
+          <article class="leader-profile" role="listitem">
+            <div class="leader-portrait">
+              <div class="leader-avatar-monogram" aria-hidden="true">NG</div>
+              <span class="leader-jurisdiction-tag">Nigeria</span>
+              <span class="leader-seat-badge">Officer 06</span>
+            </div>
+            <div class="leader-body">
+              <h3 class="leader-name">Employer Advisory &amp; Industry Lead</h3>
+              <p class="leader-role">Employer Coalitions &amp; WBL · Nigeria</p>
+              <p class="leader-bio">Convenes the 3–5 anchor employers in the Employer Advisory Group, structures paid work-based learning placements, and coordinates Capstone co-assessment.</p>
+            </div>
+          </article>
+
+          <!-- Person 7 -->
+          <article class="leader-profile" role="listitem">
+            <div class="leader-portrait">
+              <div class="leader-avatar-monogram" aria-hidden="true">NG</div>
+              <span class="leader-jurisdiction-tag">Nigeria</span>
+              <span class="leader-seat-badge">Officer 07</span>
+            </div>
+            <div class="leader-body">
+              <h3 class="leader-name">Regulatory &amp; Government Liaison</h3>
+              <p class="leader-role">NBTE &amp; State Alignment · Nigeria</p>
+              <p class="leader-bio">Manages alignment with the National Board for Technical Education (NBTE), federal and state ministries, and national stackable credential recognition.</p>
+            </div>
+          </article>
+
+          <!-- Person 8 -->
+          <article class="leader-profile" role="listitem">
+            <div class="leader-portrait">
+              <div class="leader-avatar-monogram" aria-hidden="true">ZA</div>
+              <span class="leader-jurisdiction-tag">South Africa</span>
+              <span class="leader-seat-badge">Officer 08</span>
+            </div>
+            <div class="leader-body">
+              <h3 class="leader-name">Regional Standards &amp; Curriculum Lead</h3>
+              <p class="leader-role">Competency Architecture · South Africa</p>
+              <p class="leader-bio">Leads cross-continental TVET competency benchmarking, 70/30 practical-to-theory curriculum safeguards, and master trainer standards.</p>
+            </div>
+          </article>
+
+          <!-- Person 9 -->
+          <article class="leader-profile" role="listitem">
+            <div class="leader-portrait">
+              <div class="leader-avatar-monogram" aria-hidden="true">ZA</div>
+              <span class="leader-jurisdiction-tag">South Africa</span>
+              <span class="leader-seat-badge">Officer 09</span>
+            </div>
+            <div class="leader-body">
+              <h3 class="leader-name">Replication &amp; Regional Scale Director</h3>
+              <p class="leader-role">Replication Kit &amp; QA · South Africa</p>
+              <p class="leader-bio">Packages the validated curriculum rubrics, equipment lists, and employer MOU templates into the AWTD Replication Kit for multi-country expansion.</p>
+            </div>
           </article>
         </div>
 
-        <div class="gov-roster-bar">
-          <div class="gov-roster-text">
-            <h4>Officer Roster &amp; Biographical Verification</h4>
-            <p>Individual biographies and verified role assignments for all nine seated officers are undergoing final pre-launch sign-off. Institutional partners and funders may request the governance pack directly.</p>
-          </div>
-          <a class="btn btn-p" href="get-involved.html">Request Governance Pack →</a>
-        </div>
-
-        <div class="pend-note">BLOCKED, LAUNCH GATE · Nine officers across the US, Nigeria, and South Africa. Officer names, exact office titles, and 2–3 line biographies are withheld pending reconciliation of the officer table across internal governance records.</div>
+        <div class="pend-note">BLOCKED, LAUNCH GATE · Nine officers across the US, Nigeria, and South Africa. Three internal AWTD documents currently give conflicting answers on exact office assignments (naming two COOs, inverting the South African roles against roadmap row A5, and reversing one officer's personal name). Final verified names, headshots, and 2–3 line biographies are slotted into these nine profiles upon board reconciliation.</div>
       </div>
     </div>
   </section>
@@ -155,11 +278,10 @@
   <section class="next-band" aria-label="Next section navigation">
     <div class="wrap next-band-in">
       <div>
-        <p class="eyebrow" style="margin-bottom:6px">Next in Sequence · 10</p>
-        <h2 class="h-sec" style="font-size:clamp(1.6rem,3.4vw,2.3rem)">Position papers: working documents produced by the initiative.</h2>
+        <h2 class="h-sec" style="font-size:clamp(1.5rem,3vw,2.1rem)">Position papers: working documents produced by the initiative.</h2>
       </div>
       <div class="btns" style="margin-top:0">
-        <a class="btn btn-p" href="papers.html">10 See Position Papers →</a>
+        <a class="btn btn-p" href="papers.html">See Position Papers →</a>
         <a class="btn btn-s" href="get-involved.html">Working with AWTD</a>
       </div>
     </div>
@@ -171,7 +293,7 @@
     <div class="foot-in">
       <div class="foot-brand">
         <div class="foot-brand-mark">
-          <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="54" height="54">
+          <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="62" height="62">
           <div class="mark-text">
             <span class="mark-glyph"><em>A</em>WTD</span>
             <span class="mark-sub">Africa Workforce Training &amp; Development</span>
@@ -182,25 +304,25 @@
       </div>
 
       <div class="foot-meta">
-        <b>Architecture</b>
-        <a href="problem.html">01 · The Problem</a><br>
-        <a href="model.html">02 · The Model</a><br>
-        <a href="tracks.html">04 · Training Tracks</a><br>
-        <a href="measurement.html">05 · Measurement</a>
+        <b>Programme</b>
+        <a href="problem.html">The Problem</a>
+        <a href="model.html">The Model</a>
+        <a href="tracks.html">Training Tracks</a>
+        <a href="measurement.html">Measurement</a>
       </div>
 
       <div class="foot-meta">
         <b>Execution &amp; Governance</b>
-        <a href="partners.html">07 · Partners</a><br>
-        <a href="pilot.html">08 · Nigeria Pilot</a><br>
-        <a href="leadership.html">09 · Leadership</a><br>
-        <a href="papers.html">10 · Position Papers</a>
+        <a href="partners.html">Partners</a>
+        <a href="pilot.html">Nigeria Pilot</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="papers.html">Position Papers</a>
       </div>
 
       <div class="foot-meta pend">
         <b>Contact &amp; Inquiries</b>
-        <a href="mailto:hello@awtd.org" data-config="contact-email">hello@awtd.org</a><br>
-        <span>Pilot Hubs: <span data-config="pilot-cities">Abuja + Kaduna</span></span><br>
+        <a href="mailto:hello@awtd.org" data-config="contact-email">hello@awtd.org</a>
+        <span>Pilot Hubs: <span data-config="pilot-cities">Abuja + Kaduna</span></span>
         <a href="get-involved.html">Partner &amp; Funder Portal →</a>
         <div class="pend-note">AWAITING · Final public contact details to be confirmed prior to launch.</div>
       </div>

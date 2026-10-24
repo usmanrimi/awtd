@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="claude:viewport-fit-sides" content="cover">
-  <meta name="description" content="08 The Nigeria Pilot (March 2027) — Hub-and-spoke proof of concept, two-cohort roadmap, Month 6 scale decision gate, and the Replication Kit.">
-  <title>08 The Nigeria Pilot — AWTD | Africa Workforce Training &amp; Development</title>
+  <meta name="description" content="The Nigeria Pilot (March 2027) — Hub-and-spoke proof of concept, two-cohort roadmap, Month 6 scale decision gate, and the Replication Kit.">
+  <title>The Nigeria Pilot — AWTD | Africa Workforce Training &amp; Development</title>
   <link rel="icon" type="image/jpeg" href="04%20Logos/awtd-official-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -20,12 +21,12 @@
     <div class="topbar-meta">
       <span class="topbar-badge">
         <span class="topbar-dot" aria-hidden="true"></span>
-        <span>Africa Workforce Training &amp; Development, Inc.</span>
+        <span data-config="legal-name">Africa Workforce Training &amp; Development, Inc.</span>
       </span>
       <span class="topbar-sep topbar-hide-sm" aria-hidden="true">·</span>
       <span class="topbar-hide-sm">US · Nigeria · South Africa</span>
       <span class="topbar-sep topbar-hide-sm" aria-hidden="true">·</span>
-      <span class="topbar-hide-sm">Nigeria Pilot: March 2027</span>
+      <span class="topbar-hide-sm">Nigeria Pilot (<span data-config="pilot-cities">Abuja + Kaduna</span>): March 2027</span>
     </div>
     <label class="switch" title="Highlight slots awaiting final board sign-off or asset clearance">
       <input type="checkbox" id="reviewToggle" role="switch" aria-checked="false">
@@ -38,7 +39,7 @@
 <nav class="nav" aria-label="Primary Navigation">
   <div class="wrap nav-in">
     <a class="mark" href="index.html" aria-label="AWTD — Africa Workforce Training & Development Home">
-      <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="46" height="46">
+      <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="68" height="68">
       <div class="mark-text">
         <span class="mark-glyph"><em>A</em>WTD</span>
         <span class="mark-sub">Africa Workforce Training &amp; Development</span>
@@ -68,6 +69,11 @@
     <div class="wrap review-bar-in">
       <span>BOARD REVIEW MODE ACTIVE · Dashed gold borders mark slots awaiting final asset delivery or board sign-off.</span>
       <div class="review-bar-actions">
+        <div class="review-city-editor" title="Single-source pilot cities field — updates every reference across the site">
+          <label for="reviewCityInput">Pilot Cities:</label>
+          <input type="text" id="reviewCityInput" value="Abuja + Kaduna" aria-label="Edit single-source pilot cities">
+          <button type="button" class="review-city-save" id="reviewCitySaveBtn">Apply</button>
+        </div>
         <button type="button" class="review-jump-btn" id="reviewNextBtn">Next outstanding item →</button>
       </div>
     </div>
@@ -80,11 +86,9 @@
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a>
         <span class="breadcrumb-sep" aria-hidden="true">/</span>
-        <span aria-current="page">08 · The Nigeria Pilot</span>
+        <span aria-current="page">The Nigeria Pilot</span>
       </nav>
-      <p class="eyebrow">08 / March 2027 · Proof of Concept</p>
-      <div class="rule"></div>
-      <h1 class="h-sec" style="font-size:clamp(2.5rem,6vw,4.3rem)">The Nigeria pilot</h1>
+      <h1 class="h-sec" style="font-size:clamp(2.35rem,5vw,3.6rem)">The Nigeria pilot</h1>
       <p class="lead">The Nigeria pilot is the proof of concept, and it produces the Replication Kit that AWTD takes to its next country. Every decision in the pilot is made to enable scaling.</p>
     </div>
   </header>
@@ -92,44 +96,44 @@
   <section class="band band--light reveal" id="pilot" aria-labelledby="heading-pilot">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">08 / March 2027</p>
-        <div class="rule"></div>
-        <h2 class="h-sec" id="heading-pilot">Pilot specifications &amp; six-month roadmap</h2>
+        <div>
+          <h2 class="h-sec" id="heading-pilot">Pilot specifications &amp; six-month roadmap</h2>
+        </div>
         <p class="lead">Designed to train 50 to 60 technicians across two initial cohorts while validating the hub-and-spoke delivery playbook.</p>
       </div>
 
-      <div class="specs">
-        <div class="spec"><span class="k">Locations</span><span class="v" data-config="pilot-cities">Abuja + Kaduna</span></div>
-        <div class="spec"><span class="k">Model</span><span class="v">Hub-and-spoke</span></div>
-        <div class="spec"><span class="k">Learners (Phase 1)</span><span class="v">50–60 <em>across 2 cohorts</em></span></div>
-        <div class="spec"><span class="k">Tracks (Pilot)</span><span class="v">Max 2 selected</span></div>
-        <div class="spec"><span class="k">Duration</span><span class="v">6-month phase</span></div>
-        <div class="spec"><span class="k">Scale-up</span><span class="v">24–36 months</span></div>
-        <div class="spec"><span class="k">Target (Year 1)</span><span class="v">150 youth trained</span></div>
-        <div class="spec"><span class="k">Placement Target</span><span class="v">≥70% <em>placed</em></span></div>
+      <div class="pilot-spec-bar">
+        <div class="pilot-spec-cell"><span class="k">Locations</span><span class="v" data-config="pilot-cities">Abuja + Kaduna</span></div>
+        <div class="pilot-spec-cell"><span class="k">Model</span><span class="v">Hub-and-spoke</span></div>
+        <div class="pilot-spec-cell"><span class="k">Learners (Phase 1)</span><span class="v">50–60 <em>across 2 cohorts</em></span></div>
+        <div class="pilot-spec-cell"><span class="k">Tracks (Pilot)</span><span class="v">Max 2 selected</span></div>
+        <div class="pilot-spec-cell"><span class="k">Duration</span><span class="v">6-month phase</span></div>
+        <div class="pilot-spec-cell"><span class="k">Scale-up</span><span class="v">24–36 months</span></div>
+        <div class="pilot-spec-cell"><span class="k">Target (Year 1)</span><span class="v">150 youth trained</span></div>
+        <div class="pilot-spec-cell"><span class="k">Placement Target</span><span class="v">≥70% <em>placed</em></span></div>
       </div>
 
       <div class="pend" style="margin-top:16px">
         <div class="pend-note">TWO ITEMS · Cities (<span data-config="pilot-cities">Abuja + Kaduna</span>) are built as a single editable field (<code>AWTD_CONFIG.pilotCities</code>). No budget figure appears on the public site.</div>
       </div>
 
-      <div class="phases">
-        <div class="phase">
+      <div class="roadmap-timeline">
+        <div class="roadmap-phase">
           <span class="k">Weeks 1–6 / Month 1–2</span>
           <h4>Phase 1: Discovery &amp; Design</h4>
           <p>Validate local demand, choose tracks, secure site and equipment, train instructors, finalise assessments.</p>
         </div>
-        <div class="phase">
+        <div class="roadmap-phase">
           <span class="k">Weeks 6–20 / Month 2–5</span>
           <h4>Phase 2: Cohort 1</h4>
           <p>Foundation Core, Track Training, and Capstone. Work-based learning placements begin in week 6.</p>
         </div>
-        <div class="phase">
+        <div class="roadmap-phase">
           <span class="k">Month 3–5 (concurrent)</span>
           <h4>Phase 3: Cohort 2 &amp; Refine</h4>
           <p>Apply the lessons from Cohort 1, tighten standards, stabilise costs, prepare the replication documentation.</p>
         </div>
-        <div class="phase phase--gate">
+        <div class="roadmap-phase roadmap-phase--gate">
           <span class="k">Month 6</span>
           <h4>Decision Gate: Scale</h4>
           <p>If targets are met across two cohorts, authorise packaging of the model for replication to further countries and sites.</p>
@@ -141,27 +145,24 @@
   <section class="band reveal" id="replication-kit" aria-labelledby="heading-kit">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">08 / Built for Replication</p>
-        <div class="rule"></div>
-        <h2 class="h-sec" id="heading-kit">The Replication Kit deliverables</h2>
+        <div>
+          <h2 class="h-sec" id="heading-kit">The Replication Kit deliverables</h2>
+        </div>
         <p class="lead">The pilot doesn't only graduate technicians; it yields a scalable playbook that enables rapid deployment across additional sites and countries.</p>
       </div>
 
       <div class="grid g3">
         <article class="card">
-          <span class="card-n">01 / Curriculum</span>
           <h3>Modular Curriculum &amp; Rubrics</h3>
           <p>Validated Foundation Core and trade-specific Technical Track modules paired with employer-scored practical assessment rubrics.</p>
           <span class="tag">Standardised</span>
         </article>
         <article class="card">
-          <span class="card-n">02 / Operations</span>
           <h3>Instructor &amp; MVL Equipment Lists</h3>
           <p>Master trainer onboarding materials, safety gate protocols, and Minimum Viable Lab (MVL) workshop equipment specifications.</p>
           <span class="tag">Turnkey setup</span>
         </article>
         <article class="card">
-          <span class="card-n">03 / Partnerships</span>
           <h3>Employer MOU Templates</h3>
           <p>Field-tested Employer Advisory Group charters, work-based learning host agreements, and Capstone co-assessment protocols.</p>
           <span class="tag">Ready to scale</span>
@@ -185,11 +186,10 @@
   <section class="next-band" aria-label="Next section navigation">
     <div class="wrap next-band-in">
       <div>
-        <p class="eyebrow" style="margin-bottom:6px">Next in Sequence · 09</p>
-        <h2 class="h-sec" style="font-size:clamp(1.6rem,3.4vw,2.3rem)">Leadership: nine officers across the US, Nigeria, and South Africa.</h2>
+        <h2 class="h-sec" style="font-size:clamp(1.5rem,3vw,2.1rem)">Leadership: nine officers across the US, Nigeria, and South Africa.</h2>
       </div>
       <div class="btns" style="margin-top:0">
-        <a class="btn btn-p" href="leadership.html">09 See Leadership →</a>
+        <a class="btn btn-p" href="leadership.html">See Leadership →</a>
         <a class="btn btn-s" href="get-involved.html">Working with AWTD</a>
       </div>
     </div>
@@ -201,7 +201,7 @@
     <div class="foot-in">
       <div class="foot-brand">
         <div class="foot-brand-mark">
-          <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="54" height="54">
+          <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="62" height="62">
           <div class="mark-text">
             <span class="mark-glyph"><em>A</em>WTD</span>
             <span class="mark-sub">Africa Workforce Training &amp; Development</span>
@@ -212,25 +212,25 @@
       </div>
 
       <div class="foot-meta">
-        <b>Architecture</b>
-        <a href="problem.html">01 · The Problem</a><br>
-        <a href="model.html">02 · The Model</a><br>
-        <a href="tracks.html">04 · Training Tracks</a><br>
-        <a href="measurement.html">05 · Measurement</a>
+        <b>Programme</b>
+        <a href="problem.html">The Problem</a>
+        <a href="model.html">The Model</a>
+        <a href="tracks.html">Training Tracks</a>
+        <a href="measurement.html">Measurement</a>
       </div>
 
       <div class="foot-meta">
         <b>Execution &amp; Governance</b>
-        <a href="partners.html">07 · Partners</a><br>
-        <a href="pilot.html">08 · Nigeria Pilot</a><br>
-        <a href="leadership.html">09 · Leadership</a><br>
-        <a href="papers.html">10 · Position Papers</a>
+        <a href="partners.html">Partners</a>
+        <a href="pilot.html">Nigeria Pilot</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="papers.html">Position Papers</a>
       </div>
 
       <div class="foot-meta pend">
         <b>Contact &amp; Inquiries</b>
-        <a href="mailto:hello@awtd.org" data-config="contact-email">hello@awtd.org</a><br>
-        <span>Pilot Hubs: <span data-config="pilot-cities">Abuja + Kaduna</span></span><br>
+        <a href="mailto:hello@awtd.org" data-config="contact-email">hello@awtd.org</a>
+        <span>Pilot Hubs: <span data-config="pilot-cities">Abuja + Kaduna</span></span>
         <a href="get-involved.html">Partner &amp; Funder Portal →</a>
         <div class="pend-note">AWAITING · Final public contact details to be confirmed prior to launch.</div>
       </div>

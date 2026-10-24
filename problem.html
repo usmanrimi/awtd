@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="claude:viewport-fit-sides" content="cover">
-  <meta name="description" content="01 The Problem — Why Africa's education system and its employers are not speaking, and how the AWTD Blueprint bridges academic training and employment.">
-  <title>01 The Problem — AWTD | Africa Workforce Training &amp; Development</title>
+  <meta name="description" content="The Problem — Why Africa's education system and its employers are not speaking, and how the AWTD Blueprint bridges academic training and employment.">
+  <title>The Problem — AWTD | Africa Workforce Training &amp; Development</title>
   <link rel="icon" type="image/jpeg" href="04%20Logos/awtd-official-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -20,12 +21,12 @@
     <div class="topbar-meta">
       <span class="topbar-badge">
         <span class="topbar-dot" aria-hidden="true"></span>
-        <span>Africa Workforce Training &amp; Development, Inc.</span>
+        <span data-config="legal-name">Africa Workforce Training &amp; Development, Inc.</span>
       </span>
       <span class="topbar-sep topbar-hide-sm" aria-hidden="true">·</span>
       <span class="topbar-hide-sm">US · Nigeria · South Africa</span>
       <span class="topbar-sep topbar-hide-sm" aria-hidden="true">·</span>
-      <span class="topbar-hide-sm">Nigeria Pilot: March 2027</span>
+      <span class="topbar-hide-sm">Nigeria Pilot (<span data-config="pilot-cities">Abuja + Kaduna</span>): March 2027</span>
     </div>
     <label class="switch" title="Highlight slots awaiting final board sign-off or asset clearance">
       <input type="checkbox" id="reviewToggle" role="switch" aria-checked="false">
@@ -38,7 +39,7 @@
 <nav class="nav" aria-label="Primary Navigation">
   <div class="wrap nav-in">
     <a class="mark" href="index.html" aria-label="AWTD — Africa Workforce Training & Development Home">
-      <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="46" height="46">
+      <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="68" height="68">
       <div class="mark-text">
         <span class="mark-glyph"><em>A</em>WTD</span>
         <span class="mark-sub">Africa Workforce Training &amp; Development</span>
@@ -68,6 +69,11 @@
     <div class="wrap review-bar-in">
       <span>BOARD REVIEW MODE ACTIVE · Dashed gold borders mark slots awaiting final asset delivery or board sign-off.</span>
       <div class="review-bar-actions">
+        <div class="review-city-editor" title="Single-source pilot cities field — updates every reference across the site">
+          <label for="reviewCityInput">Pilot Cities:</label>
+          <input type="text" id="reviewCityInput" value="Abuja + Kaduna" aria-label="Edit single-source pilot cities">
+          <button type="button" class="review-city-save" id="reviewCitySaveBtn">Apply</button>
+        </div>
         <button type="button" class="review-jump-btn" id="reviewNextBtn">Next outstanding item →</button>
       </div>
     </div>
@@ -80,11 +86,9 @@
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a>
         <span class="breadcrumb-sep" aria-hidden="true">/</span>
-        <span aria-current="page">01 · The Problem</span>
+        <span aria-current="page">The Problem</span>
       </nav>
-      <p class="eyebrow">01 · Structural Diagnosis</p>
-      <div class="rule"></div>
-      <h1 class="h-sec" style="font-size:clamp(2.5rem,6vw,4.3rem)">The problem</h1>
+      <h1 class="h-sec" style="font-size:clamp(2.35rem,5vw,3.6rem)">The problem</h1>
       <p class="lead">Africa's education system and its employers are not speaking. Nigeria's TVET enrolment sits below 10% of tertiary education, while employers report graduates who lack hands-on skills, safety culture, and work-readiness. The bridge between academic training and real employment is broken.</p>
 
       <div class="stats" aria-label="Problem & Solution Benchmark Figures">
@@ -111,21 +115,21 @@
   <section class="band reveal" id="contrast" aria-labelledby="heading-contrast">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">01 / Structural Contrast</p>
-        <div class="rule"></div>
-        <h2 class="h-sec" id="heading-contrast">The Status Quo vs. The AWTD Blueprint</h2>
+        <div>
+          <h2 class="h-sec" id="heading-contrast">The Status Quo vs. The AWTD Blueprint</h2>
+        </div>
         <p class="lead">Select any operational dimension below to compare conventional vocational schooling against AWTD's employer-led training blueprint.</p>
       </div>
 
       <div class="contrast-toolbar" aria-label="Filter contrast dimensions">
         <div class="contrast-filters" role="group" aria-label="Operational dimensions">
-          <button type="button" class="contrast-btn is-active" data-contrast-dim="all" aria-pressed="true">All 6 Dimensions</button>
-          <button type="button" class="contrast-btn" data-contrast-dim="cycle" aria-pressed="false">01 Cycle Length</button>
-          <button type="button" class="contrast-btn" data-contrast-dim="industry" aria-pressed="false">02 Industry Co-Design</button>
-          <button type="button" class="contrast-btn" data-contrast-dim="assessment" aria-pressed="false">03 Assessment</button>
-          <button type="button" class="contrast-btn" data-contrast-dim="curriculum" aria-pressed="false">04 Curriculum Agility</button>
-          <button type="button" class="contrast-btn" data-contrast-dim="workshop" aria-pressed="false">05 Workshop Focus</button>
-          <button type="button" class="contrast-btn" data-contrast-dim="transition" aria-pressed="false">06 Apprenticeships</button>
+          <button type="button" class="contrast-btn is-active" data-contrast-dim="all" aria-pressed="true">All Dimensions</button>
+          <button type="button" class="contrast-btn" data-contrast-dim="cycle" aria-pressed="false">Cycle Length</button>
+          <button type="button" class="contrast-btn" data-contrast-dim="industry" aria-pressed="false">Industry Co-Design</button>
+          <button type="button" class="contrast-btn" data-contrast-dim="assessment" aria-pressed="false">Assessment</button>
+          <button type="button" class="contrast-btn" data-contrast-dim="curriculum" aria-pressed="false">Curriculum Agility</button>
+          <button type="button" class="contrast-btn" data-contrast-dim="workshop" aria-pressed="false">Workshop Focus</button>
+          <button type="button" class="contrast-btn" data-contrast-dim="transition" aria-pressed="false">Apprenticeships</button>
         </div>
       </div>
 
@@ -177,45 +181,39 @@
   <section class="band band--light reveal" id="shifts" aria-labelledby="heading-shifts">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">01 / Six Operational Shifts</p>
-        <div class="rule"></div>
-        <h2 class="h-sec" id="heading-shifts">Closing the technician gap</h2>
+        <div>
+          <h2 class="h-sec" id="heading-shifts">Closing the technician gap</h2>
+        </div>
         <p class="lead">Each pillar of the AWTD Blueprint directly resolves a structural bottleneck identified by industrial and infrastructure employers.</p>
       </div>
 
       <div class="grid g3">
         <article class="card">
-          <span class="card-n">01 / Cycle</span>
           <h3>Months, Not Years</h3>
           <p>Replaces multi-year theoretical programmes with focused, stackable modules that prepare job-ready technicians quickly.</p>
           <span class="tag">Short-cycle modules</span>
         </article>
         <article class="card">
-          <span class="card-n">02 / Standards</span>
           <h3>Employer Co-Design</h3>
           <p>Sector councils and Employer Advisory Groups define job roles, competency checklists, and quarterly demand signals from day one.</p>
           <span class="tag">Industry-led</span>
         </article>
         <article class="card">
-          <span class="card-n">03 / Verification</span>
           <h3>Performance Portfolios</h3>
           <p>Moves beyond written exams to practical Capstone Validation projects scored jointly by instructors and employer assessors.</p>
           <span class="tag">100% practical sign-off</span>
         </article>
         <article class="card">
-          <span class="card-n">04 / Agility</span>
           <h3>Rapid Iteration</h3>
           <p>Replaces static curricula with quarterly refresh cycles, weekly skills audits, and a turnkey Replication Kit built for scaling.</p>
           <span class="tag">Quarterly refresh</span>
         </article>
         <article class="card">
-          <span class="card-n">05 / Delivery</span>
           <h3>70% Hands-On Practice</h3>
           <p>Grounds learning in workshop practice, applied numeracy, and strict safety culture before classroom theory.</p>
           <span class="tag">Workshop-first</span>
         </article>
         <article class="card">
-          <span class="card-n">06 / Transition</span>
           <h3>Paid Apprenticeships</h3>
           <p>Compresses post-hire ramp times through structured work-based learning placements hosted at partner employer sites.</p>
           <span class="tag">Workplace mentors</span>
@@ -227,11 +225,10 @@
   <section class="next-band" aria-label="Next section navigation">
     <div class="wrap next-band-in">
       <div>
-        <p class="eyebrow" style="margin-bottom:6px">Next in Sequence · 02</p>
-        <h2 class="h-sec" style="font-size:clamp(1.6rem,3.4vw,2.3rem)">The model: industry-led, competency-based, measured on outcomes.</h2>
+        <h2 class="h-sec" style="font-size:clamp(1.5rem,3vw,2.1rem)">The model: industry-led, competency-based, measured on outcomes.</h2>
       </div>
       <div class="btns" style="margin-top:0">
-        <a class="btn btn-p" href="model.html">02 See the Model →</a>
+        <a class="btn btn-p" href="model.html">See the Model →</a>
         <a class="btn btn-s" href="get-involved.html">Working with AWTD</a>
       </div>
     </div>
@@ -243,7 +240,7 @@
     <div class="foot-in">
       <div class="foot-brand">
         <div class="foot-brand-mark">
-          <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="54" height="54">
+          <img class="mark-seal" src="04%20Logos/awtd-official-logo.jpg" alt="Official AWTD Logo" width="62" height="62">
           <div class="mark-text">
             <span class="mark-glyph"><em>A</em>WTD</span>
             <span class="mark-sub">Africa Workforce Training &amp; Development</span>
@@ -254,25 +251,25 @@
       </div>
 
       <div class="foot-meta">
-        <b>Architecture</b>
-        <a href="problem.html">01 · The Problem</a><br>
-        <a href="model.html">02 · The Model</a><br>
-        <a href="tracks.html">04 · Training Tracks</a><br>
-        <a href="measurement.html">05 · Measurement</a>
+        <b>Programme</b>
+        <a href="problem.html">The Problem</a>
+        <a href="model.html">The Model</a>
+        <a href="tracks.html">Training Tracks</a>
+        <a href="measurement.html">Measurement</a>
       </div>
 
       <div class="foot-meta">
         <b>Execution &amp; Governance</b>
-        <a href="partners.html">07 · Partners</a><br>
-        <a href="pilot.html">08 · Nigeria Pilot</a><br>
-        <a href="leadership.html">09 · Leadership</a><br>
-        <a href="papers.html">10 · Position Papers</a>
+        <a href="partners.html">Partners</a>
+        <a href="pilot.html">Nigeria Pilot</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="papers.html">Position Papers</a>
       </div>
 
       <div class="foot-meta pend">
         <b>Contact &amp; Inquiries</b>
-        <a href="mailto:hello@awtd.org" data-config="contact-email">hello@awtd.org</a><br>
-        <span>Pilot Hubs: <span data-config="pilot-cities">Abuja + Kaduna</span></span><br>
+        <a href="mailto:hello@awtd.org" data-config="contact-email">hello@awtd.org</a>
+        <span>Pilot Hubs: <span data-config="pilot-cities">Abuja + Kaduna</span></span>
         <a href="get-involved.html">Partner &amp; Funder Portal →</a>
         <div class="pend-note">AWAITING · Final public contact details to be confirmed prior to launch.</div>
       </div>
